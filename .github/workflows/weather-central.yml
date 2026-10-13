@@ -42,4 +42,4 @@ jobs:
           if-no-files-found: warn
           retention-days: 7
       - name: Confirm no public upload occurred
-        run: echo 'TEST MODE: no YouTube upload step is configured.'
+        run: echo TEST_MODE_no_YouTube_upload_step_is_configured
