@@ -27,7 +27,7 @@ Duration must be between 15 and 60 seconds. The default is 30 seconds at 12 fram
 
 ## GitHub Actions
 
-Open the **Actions** tab and run **Weather Central (test mode)** manually, or wait for the daily schedule. The successful run includes an artifact named `weather-central-test-…` containing the MP4 and `manifest.json`. Artifacts are retained for seven days.
+Open the **Actions** tab and run **Weather Central (test mode)** manually, or wait for the daily schedule. The successful run includes an artifact named `weather-central-test-…` containing the MP4 and `manifest.json`. Artifacts are retained for seven days. If a video is deleted, push a new commit to `main` or manually start the workflow again to generate a replacement artifact.
 
 ## Official data sources
 
