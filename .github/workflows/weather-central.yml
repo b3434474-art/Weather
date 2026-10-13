@@ -1,6 +1,8 @@
 name: Weather Central (test mode)
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
   schedule:
     # Daily at 14:15 UTC; scheduled starts can be delayed by GitHub.
@@ -16,7 +18,7 @@ concurrency:
 jobs:
   render-test-video:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 20
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
