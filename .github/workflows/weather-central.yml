@@ -34,7 +34,7 @@ jobs:
       - name: Fetch, validate, and render test video
         run: python weather_central.py --output output/weather-central.mp4
       - name: Upload test video and manifest
-        if: always() && hashFiles('output/**') != ''
+        if: "${{ always() && hashFiles('output/**') != '' }}"
         uses: actions/upload-artifact@v4
         with:
           name: weather-central-test-${{ github.run_id }}-${{ github.run_attempt }}
